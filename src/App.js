@@ -9,13 +9,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar1 from "./Components/Navigation/Navbar1";
 import Navbar2 from "./Components/Navigation/Navbar2";
 import Hero from "./Components/Hero Section/Hero";
+import Searchbar from "./Components/Hero Section/Searchbar";
+
 function App() {
   return (
     <div className="App">
       <header>
         <Navbar1 />
         <Navbar2 />
-        <Hero />
+        <div className="hero-wrap">
+          <Hero />
+
+          <ourDestination />
+        </div>
       </header>
     </div>
   );
